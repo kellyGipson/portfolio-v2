@@ -1,3 +1,15 @@
 import { Routes } from '@angular/router';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
-export const routes: Routes = [];
+const PORTFOLIO_ROUTE = 'portfolio';
+export const routes: Routes = [
+  {
+    path: PORTFOLIO_ROUTE,
+    component: PortfolioComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '/' + PORTFOLIO_ROUTE,
+    pathMatch: 'full',
+  }
+];

@@ -5,16 +5,10 @@
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'absolute',
-    top: '0px',
-    left: '0px',
   }"
 >
   <div
-    [style]="{
-      height: '1rem',
-      color: 'lightgrey',
-    }"
+    [style]="{ height: '1rem' }"
+    [parallax]=".01"
   >Welcome!</div>
 </div>
-<router-outlet/>
