@@ -9,4 +9,5 @@ import { ParallaxDirective } from '../parallax/parallax.directive';
   ]
 })
 export class PortfolioComponent {
+  title = 'Kelly Gipson Portfolio v2';
 }
